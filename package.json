@@ -1,6 +1,6 @@
 {
-  "name": "color-lerp",
-  "version": "1.0.5",
+  "name": "color-lerp-web",
+  "version": "1.0.0",
   "description": "Create a range of colors in an Array by linear interpolation.",
   "main": "index.js",
   "files": [
@@ -19,24 +19,15 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/dannyfritz/color-lerp"
+    "url": "https://github.com/vijayst/color-lerp"
   },
   "bugs": {
-    "url": "https://github.com/dannyfritz/color-lerp/issues"
+    "url": "https://github.com/vijayst/color-lerp/issues"
   },
   "scripts": {
-    "stare": "npm-stare",
     "test": "eslint lib && tape ./test/*.js | tap-min"
   },
-  "stare": {
-    "test": {
-      "path": [
-        "lib/",
-        "test/"
-      ]
-    }
-  },
-  "author": "Danny Fritz <dannyfritz@gmail.com>",
+  "author": "Vijay Thirugnanam <vijayst@gmail.com>",
   "license": "MIT",
   "keywords": [
     "color",
