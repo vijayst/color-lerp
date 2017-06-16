@@ -1,14 +1,16 @@
 [![MIT](https://img.shields.io/npm/l/color-lerp.svg?style=flat-square)](http://opensource.org/licenses/MIT)
 [![npm](https://img.shields.io/npm/v/color-lerp.svg?style=flat-square)](https://www.npmjs.com/package/color-lerp)
 
-# color-lerp
+# color-lerp-web
 
-Creates arbitrary size ranges of colors given 2 colors and a size.
+Creates arbitrary size ranges of colors given 2 colors and a size. This package is a fork from [color-lerp](https://github.com/dannyfritz/color-lerp).
+This package replaces lodash-fp / lodash-compat with lodash to reduce bundle size. 
 
 ## Installation
 
 ```bash
-$ npm install color-lerp -S
+npm install color-lerp-web
+yarn add color-lerp-web
 ```
 
 ## Usage
@@ -16,14 +18,14 @@ $ npm install color-lerp -S
 Turn 2 colors into a spectrum of 3 colors.
 
 ```js
-var colorLerp = require('color-lerp');
+var colorLerp = require('color-lerp-web');
 colorLerp('hsl(0, 50%, 50%)', 'hsl(100, 50%, 50%)', 3);
 // => ['hsl(0, 50%, 50%)', 'hsl(50, 50%, 50%)', 'hsl(100, 50%, 50%)'];
 ```
 
 Return the results in `RGB` instead of `HSL`.
 ```js
-var colorLerp = require('color-lerp');
+var colorLerp = require('color-lerp-web');
 colorLerp('#FF0000', '#00FF00', 2, 'rgb');
 // => ['rgb(255, 0, 0)', 'rgb(0, 255, 0)'];
 ```
