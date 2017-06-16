@@ -10,7 +10,7 @@
   "dependencies": {
     "color": "^0.8.0",
     "lerp": "^1.0.3",
-    "lodash-fp": "^0.5.1"
+    "lodash": "^4.17.4"
   },
   "devDependencies": {
     "eslint": "^0.17.0",
